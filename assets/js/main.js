@@ -298,8 +298,8 @@ class MusicPlayer {
 
     handlePrevSong() {
         this.prevBtn.onclick = () => {
-            this.isRandom ? this.randomSong() : this.nextSong();
-            this.prevSong();
+            this.isRandom ? this.randomSong() : this.prevSong();
+
             this.renderSong();
             $('.song.active').classList.add('playing');
             $('.song.active').classList.remove('pause');
